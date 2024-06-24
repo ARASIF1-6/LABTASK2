@@ -1,0 +1,48 @@
+﻿@model LabTask2.Models.Product
+@{
+    ViewBag.Title = "StronglyType";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>StronglyType</h2>
+
+<div>
+ @Html.LabelFor(model => model.id):
+ @Html.TextBoxFor(model => model.id)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.name):
+    @Html.TextBoxFor(model => model.name)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.price):
+    @Html.TextBoxFor(model => model.price)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.quantity):
+    @Html.TextBoxFor(model => model.quantity)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.category):
+    @Html.TextBoxFor(model => model.category)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.production_date):
+    @Html.TextBoxFor(model => model.production_date)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.is_disposeable):
+    @Html.TextBoxFor(model => model.is_disposeable)
+</div>
+
+<div>
+    @Html.LabelFor(model => model.support_mail):
+    @Html.TextBoxFor(model => model.support_mail)
+</div>
+
